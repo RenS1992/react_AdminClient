@@ -6,15 +6,18 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom'
 import Login from './pages/login/login'
 import Admin from './pages/admin/admin'
 
-
+/* 
+  根组件
+*/
 export default class App extends Component{
    
     render(){
         return(
             <BrowserRouter>
                 <Switch>
-                    <Route pach='/login' component={Login}/>
-                    <Route pach='/' component={Admin}/>
+                    {/* 注册路由 */}
+                    <Route path='/login' component={Login}/>
+                    <Route path='/' component={Admin}/>
                 </Switch>
             </BrowserRouter>  
         )
