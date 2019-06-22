@@ -1,15 +1,14 @@
 /* 
-在内存中保存数据的模块
+在内存保存数据的工具模块
 */
 // let user = {}
 export default {
-    //俩种写法
-    user: {},
-  
-    /* getUser () {
-      return user
-    },
-    saveUser (u) {
-      user = u
-    } */
-  }
+  user: {},
+
+  /* getUser () {
+    return user
+  },
+  saveUser (u) {
+    user = u
+  } */
+}

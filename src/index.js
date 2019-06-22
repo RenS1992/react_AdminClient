@@ -1,17 +1,20 @@
+/* 
+入口js
+*/
+
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+import {getUser} from './utils/storageUtils'
 import memeoryUtils from './utils/memoryUtils'
-import {getUser} from './utils/strorageUtils'
-import App from './App'
+import App from './App' // 自定义的模块引入必须以.开头
 
-import './api'
-/* 
-入口文件
-*/
-// 读取local中保存的user, 缓存到内存中
+// import './test/async'
+// import './test/error'
 
+// 读取local中保存user, 缓存到内存中
 const user = getUser()
 memeoryUtils.user = user
 
-ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render( < App /> , document.getElementById('root'))
+
